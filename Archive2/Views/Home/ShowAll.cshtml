@@ -1,0 +1,81 @@
+﻿<!--Table-->
+
+
+
+<style>
+    body {
+        background-image: url('../sendandview/img/gg.jpg');
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+</style>
+
+<br />
+<div class="input-group">
+    <select name="entitiesNum" id="entitiesNum" style="color:#CD5C5C; border-radius:6px; margin-right: 7px;">
+        <option value="All">All</option>
+        <option value="10">10</option>
+        <option value="30">30</option>
+        <option value="50">50</option>
+    </select>
+    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <button type="button" class="btn btn-outline-primary" style="border-radius:5px; color:white; background-color:#83310F; border-color:#83310F;">Search</button>
+</div>
+
+<br />
+<div class="entQun">
+    <!-- Your content here -->
+</div>
+
+<style>
+    .input-group {
+        width: 50%;
+    }
+
+    select {
+        width: 150px;
+    }
+
+        select:focus {
+            min-width: 150px;
+            width: auto;
+        }
+</style>
+
+
+
+<br />
+<table class="table table-hover table-fixed">
+    <!--Table head-->
+    <thead>
+        <tr>
+            <th>code</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Job Title</th>
+            <th>Mobile Number</th>
+            <th>Admin</th>
+
+        </tr>
+    </thead>
+    <!--Table head-->
+    <!--Table body-->
+    <tbody>
+        @foreach (var user in ViewBag.AllUsers)
+        {
+            
+            <tr>
+                    <td>@user.UserAccID</td>
+                    <td>@user.UserName</td>
+                    <td>@user.AcadMail</td>
+                    <td>@user.JobTitle</td>
+                    <td>@user.Phone</td>
+                <td>@user.IsAdmin</td>
+
+            </tr>
+            
+        }
+    </tbody>
+    <!--Table body-->
+</table>

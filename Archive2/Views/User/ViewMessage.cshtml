@@ -1,0 +1,131 @@
+﻿
+<style>
+    body {
+        background-image: url('../sendandview/img/f4.jpg');
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-container {
+        height: 100%;
+    }
+
+    .full-screen-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: fixed;
+    }
+
+    .form-container {
+        height: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group input {
+        flex: 1;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control-lg {
+        font-size: 14px;
+    }
+
+</style>
+
+<section class="vh-100">
+    <header style="text-align: center">
+        <br />
+        <h1 style="color:white"> View Message </h1>
+    </header>
+
+    <div class="form-outline mb-4">
+        <div class="form-container">
+            <form>
+                <style>
+                    /* Your existing CSS code here */
+
+                    form button {
+                        display: block;
+                        margin: 0 auto;
+                        border-radius: 10px; /* Add border-radius property with a value to set the desired rounded edge */
+                    }
+                </style>
+                <div>
+                    <!-- Speech ID -->
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div>
+                        <label style="color:#E6E3D9" class="form-label" for="form1Example13">Speech ID</label>
+                        <input style="text-align: center" type="number" id="form1Example13" class="form-control form-control-lg" readonly />
+
+                    </div>
+
+                    <!--Date -->
+                    <div>
+                        <label style="color:#E6E3D9" class="form-label" for="form1Example23">Date</label>
+                        <input type="date" style="text-align: center" id="form1Example13" class="form-control form-control-lg" readonly />
+                    </div>
+
+                    <!-- number of attached files -->
+                    <div>
+                        <label style="color:#E6E3D9" class="form-label" for="form1Example23"> Number of attached files</label>
+                        <input style="text-align: center" type="number" id="form1Example13" class="form-control form-control-lg" readonly />
+                    </div>
+
+                    <!-- Address of the letter -->
+                    <div>
+                        <label style="color:#E6E3D9" class="form-label" for="form1Example23"> Address of the letter</label>
+                        <input type="text" style="text-align: center" id="form1Example13" class="form-control form-control-lg" readonly />
+                    </div>
+
+                    <!-- The content of the letter -->
+                    <div>
+                        <label style="color:#E6E3D9" class="form-label" for="form1Example23"> The content of the letter</label>
+                        <input type="text" style="text-align: center" id="form1Example13" class="form-control form-control-lg" readonly />
+                    </div>
+
+                    <!-- The destination from which the letter was received -->
+                    <div>
+                        <label style="color:#E6E3D9" class="form-label" for="form1Example23"> The destination from which the letter was received</label>
+                        <input type="text" style="text-align: center" id="form1Example13" class="form-control form-control-lg" readonly />
+                    </div>
+
+                    <!-- pertaining to the speech -->
+                    <div>
+                        <label style="color:#E6E3D9" class="form-label" for="form1Example23"> Attachment</label>
+                        <input type="text" style="text-align: center" id="form1Example13" class="form-control form-control-lg" readonly />
+                    </div>
+                    <br />
+
+                    <!--  button -->
+                    <button style="text-align: center; background-color:#DCABAB; border-color: white; border-radius: 25px; color: white; padding: 10px 20px;" asp-action="Export" asp-controller="Data">Back</button>
+                    <br />
+                </div>
+            </form>
+            <br />
+        </div>
+        <br />
+    </div>
+    <div>
+    </div>
+</section>
